@@ -1,12 +1,19 @@
 import Colors from '@/src/constants/Colors';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import { Item } from '@/src/types';
 
-const ItemList = ({ item }) => {
+export const defaultItemImage = 'https://www.thermaxglobal.com/wp-content/uploads/2020/05/image-not-found.jpg';
+
+type ItemListProps = {
+    item: Item;
+}
+
+const ItemList = ({ item }: ItemListProps) => {
 
   return (
     <View style={styles.container}>
      <Text style={styles.title}>{item.name}</Text>
-      <Image source={{uri: item.image}} style={styles.image} />
+      <Image source={{uri: item.image ||defaultItemImage }} style={styles.image} />
      <Text style={styles.subtitle}>Quantity : {item.quantity}</Text>
      <Text style={styles.subtitle}>Category : {item.category}</Text>
      <Text style={styles.subtitle}>Date Added : {item.addedAt.toDateString()}</Text>
