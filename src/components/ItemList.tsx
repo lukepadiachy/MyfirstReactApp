@@ -21,9 +21,6 @@ const ItemList = ({ item }: ItemListProps) => {
       />
      <Text style={styles.subtitle}>Quantity : {item.quantity}</Text>
      <Text style={styles.subtitle}>Category : {item.category}</Text>
-     <Text style={styles.subtitle}>Date Added : {item.addedAt.toDateString()}</Text>
-     <Text style={styles.subtitle}>Date Updated : {item.updatedAt.toDateString()}</Text>
-     <Text style={styles.subtitle}>Expiry Date : {item.expiryDate.toDateString()}</Text>
     </View>
 
   );
@@ -51,7 +48,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 18,
-    color: Colors.light.tint,
+    color: Colors.light.text,
   },
   image: {
     width: '100%',

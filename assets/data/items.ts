@@ -38,7 +38,7 @@ const items = [
     addedAt: new Date('2023-10-01'),
     updatedAt: new Date('2023-10-01'),
     expiryDate: new Date('2024-07-01'),
-    image: 'https://www.checkers.co.za/medias/10239475EA-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3wyNTIwMDN8aW1hZ2UvcG5nfGltYWdlcy9oYzUvaDJhLzEwOTk5NDY0NTU4NjIyLnBuZ3wzN2E0MmRhZWM3ODM3MmZhMmVlYWVhMzU4M2MzOGVhOWY1ODRlMDcxZWNiNGQwYTcxMjA5Y2RmZDQwOGFjZTVj',
+    image: 'https://www.saffatrading.co.za/content/images/thumbs/0000097_black-cat-peanut-butter_625.jpeg',
   },
   {
     id: '5',
@@ -98,7 +98,7 @@ const items = [
     addedAt: new Date('2023-10-01'),
     updatedAt: new Date('2023-10-01'),
     expiryDate: new Date('2025-10-01'),
-    image: 'https://www.shoprite.co.za/medias/10154874EA-inBoxImage-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3wyMzg2MzV8aW1hZ2UvcG5nfGltYWdlcy9oY2EvaGQ1LzEwNTA3NTk0NTk2MzgyLnBuZ3w3NWRhY2I1ZmJiNTA3NjNkYTUyMmRkNmIzZTkzNjk3YTJmZWE5NWY2NTY3ODEwNTI1OTNlZjgwNjYwM2E0NDBl',
+    image: 'https://exclusivelyfood.co.za/wp-content/uploads/2020/03/FATTIS-MONIS-PASTA-QUILLS-PENNE-500g.jpg',
   },
 ];
 
