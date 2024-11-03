@@ -13,7 +13,12 @@ const ItemList = ({ item }: ItemListProps) => {
   return (
     <View style={styles.container}>
      <Text style={styles.title}>{item.name}</Text>
-      <Image source={{uri: item.image ||defaultItemImage }} style={styles.image} />
+      <Image 
+      source={{uri: item.image ||defaultItemImage }} 
+      style={styles.image} 
+      resizeMode='contain'
+      
+      />
      <Text style={styles.subtitle}>Quantity : {item.quantity}</Text>
      <Text style={styles.subtitle}>Category : {item.category}</Text>
      <Text style={styles.subtitle}>Date Added : {item.addedAt.toDateString()}</Text>
@@ -31,6 +36,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: 10,
     borderRadius: 20,
+    flex: 1,
   },
   title: {
     fontSize: 25,
