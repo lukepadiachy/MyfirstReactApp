@@ -1,6 +1,7 @@
 import Colors from '@/src/constants/Colors';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
 import { Item } from '@/src/types';
+import { Link } from 'expo-router';
 
 export const defaultItemImage = 'https://www.thermaxglobal.com/wp-content/uploads/2020/05/image-not-found.jpg';
 
@@ -11,17 +12,22 @@ type ItemListProps = {
 const ItemList = ({ item }: ItemListProps) => {
 
   return (
-    <View style={styles.container}>
-     <Text style={styles.title}>{item.name}</Text>
+    <Link href={`/menu/${item.id}`} asChild> 
+    <Pressable style={styles.container}>
+     
       <Image 
       source={{uri: item.image ||defaultItemImage }} 
       style={styles.image} 
       resizeMode='contain'
       
       />
+    <Text style={styles.title}>{item.name}</Text>
      <Text style={styles.subtitle}>Quantity : {item.quantity}</Text>
      <Text style={styles.subtitle}>Category : {item.category}</Text>
-    </View>
+
+      
+    </Pressable>
+    </Link>
 
   );
 };
